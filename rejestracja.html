@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="rejestracja.css" />
+    <title>Rejestracja</title>
+  </head>
+    <body>
+        <div class="container">
+            <div class="forms-container">
+              <div class="signin-signup">
+                <form action="#" class="sign-in-form">
+                  <h2 class="title">Dokończ rejestrację, aby założyć konto na stronie</h2>
+                  <div class="input-field">
+                    <i class="fa fa-address-book-o" aria-hidden="true"></i>
+                    <input type="text" placeholder="imię" />
+                  </div>
+                  <div class="input-field">
+                    <i class="fa fa-address-book-o" aria-hidden="true"></i>
+                    <input type="text" placeholder="nazwisko" />
+                  </div>
+                  <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="pomocniczy adres e-mail"/>
+                  </div>
+                  <p>Użyjemy go, by zabezpieczyć twoje konto</p>
+                  <div class="input-field">
+                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    <input id="data" name="date" type="text" placeholder="data urodzenia" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" min='1899-01-01' max="lol">
+                  </div>
+                  <div class="input-field">
+                    <i class="fa fa-venus-mars" aria-hidden="true"></i>
+                    <input type="text" placeholder="płeć" list="defaultTels"/>
+                    <datalist id="defaultTels">
+                        <option value="Mężczyzna">
+                        <option value="Kobieta">
+                        <option value="Inne">
+                        <option value="Nie chcę podawać">
+                      </datalist>
+                  </div>
+                  <div class="input-field">
+                    <i class="fa fa-phone-square-alt" aria-hidden="true"></i>
+                    <input type="tel" placeholder="numer telefonu(opcjonalny)" maxlength="9"/>
+                  </div>
+                  <input type="button" value="Powrót" class="button" onclick="history.back()"/>
+                  <input type="submit" value="Zakończ rejestrację" class="button"/>
+                </form>
+            </div>
+        </div>
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                <h3>Udostępnij naszą stronę na social media</h3>
+                <div class="media">
+                    <ul>
+                      <li><img src="fb.svg"/></li>
+                      <li><img src="twitter.svg"/></li>
+                      <li><img src="gmail.svg"/></li>
+                      <li><img src="insta.svg"/></li>
+                  </ul> 
+                  </div>
+                </div>
+            </div>
+
+        <script
+            src="data_max.js"
+            src="plec.js">
+        </script>
+        <script src="app.js"></script>
+                
+    </body>
+</html>
