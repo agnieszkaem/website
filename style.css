@@ -290,6 +290,15 @@ form.sign-in-form {
   .container.sign-up-mode .signin-signup {
     left: 50%;
   }
+  .media {
+    display: none;
+    visibility: hidden;  
+  }
+
+  .social-text{
+    display: none;
+    visibility: hidden;
+  }
 
   .panels-container {
     grid-template-columns: 1fr;
@@ -377,7 +386,15 @@ form.sign-in-form {
   form {
     padding: 0 1.5rem;
   }
+  .media {
+    display: none;
+    visibility: hidden;  
+  }
 
+  .social-text{
+    display: none;
+    visibility: hidden;
+  }
 
   .panel .content {
     padding: 0.5rem 1rem;
