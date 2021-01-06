@@ -63,6 +63,7 @@
     font-size: 2.2rem;
     color: #444;
     margin-bottom: 10px;
+    text-align: center;
   }
   
   .input-field {
@@ -100,6 +101,29 @@
     color: #aaa;
     font-weight: 500;
   }
+
+  .tooltip-text {
+    visibility: hidden;
+    
+    width: 15em;
+    font-size: 0.8rem;
+    background-color: #aaa;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -4em;
+    margin-left: 7.5em;
+  }
+
+
+  .input-field:hover .tooltip-text {
+    visibility: visible;
+  }
+
+
   .input-field input[value="0000-00-00"]::-webkit-datetime-edit {
     color: transparent; 
 }
@@ -151,11 +175,6 @@
     right: 48%;
     transform: translateY(-50%);
     background-image: linear-gradient(-45deg, #040FD9 0%,  #5E83F2 100%);
-   /*
-    background-image: url('pex.jpg');
-    background-size: cover;
-    opacity: 0.8;
-     */
     transition: 1.8s ease-in-out;
     border-radius: 50%; 
     z-index: 6;
@@ -173,13 +192,14 @@
   
   .left-panel {
     pointer-events: all;
-    padding: 3rem 17% 2rem 12%;
+    padding: 3rem 30% 2rem 10%;
   }
-  
+  /*
   .right-panel {
     pointer-events: none;
     padding: 3rem 12% 2rem 17%;
   }
+  */
   
   .panel .content {
     color: #fff;
@@ -192,11 +212,40 @@
     line-height: 1;
     font-size: 1.5rem;
   }
+
+
+  .media {
+    width: 100%;
+    text-align: center;
+    margin-top: 4px;
+    cursor: pointer;
   
+  }
+  
+  .media ul { 
+    list-style: none;
+  }
+  
+  .media ul li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  .media li:hover {
+    opacity:0.7;
+    filter: alpha(opacity=70);
+  }
+  .media img {
+   width: 35px;
+   height: 35px;
+  }
+  
+  /*
   .panel p {
     font-size: 0.95rem;
     padding: 0.7rem 0;
   }
+  */ 
+
   .button.transparent {
     margin: 0;
     background: none;
@@ -207,10 +256,11 @@
     font-size: 0.8rem;
   }
   
-  .right-panel .image,
+ /* .right-panel,
   .right-panel .content {
     transform: translateX(800px);
-  }
+  } */
+
   container.sign-up-mode:before {
     transform: translate(100%, -50%);
     right: 52%;
@@ -236,17 +286,13 @@
   } 
   
   
-  .container.sign-up-mode .right-panel,
-  .container.sign-up-mode .right-panel .content {
+  .container.sign-up-mode ,
+  .container.sign-up-mode  .content {
     transform: translateX(0%);
   }
   
   .container.sign-up-mode .left-panel {
     pointer-events: none;
-  }
-  
-  .container.sign-up-mode .right-panel {
-    pointer-events: all;
   }
   
   @media (max-width: 870px) {
@@ -279,9 +325,9 @@
       grid-column: 1 / 2;
     }
   
-    .right-panel {
+    /*.right-panel {
       grid-row: 3 / 4;
-    }
+    } */
   
     .left-panel {
       grid-row: 1 / 2;
@@ -289,10 +335,13 @@
   
   
   
-    .panel .content {
+    .panel .content { 
+      display: none;
+      /*
       padding-right: 15%;
       transition: transform 0.9s ease-in-out;
       transition-delay: 0.8s;
+      */
     }
   
     .panel h3 {
@@ -311,7 +360,8 @@
     }
   
     .container:before {
-      width: 1500px;
+      display:none;
+     /* width: 1500px;
       height: 1500px;
       transform: translateX(-50%);
       left: 50%;
@@ -319,6 +369,10 @@
       right: initial;
       top: initial;
       transition: 2s ease-in-out;
+      */
+    }
+    .media {
+      display: none;
     }
   
     .container.sign-up-mode:before {
@@ -346,6 +400,9 @@
       top: 5%;
       transform: translate(-50%, 0);
     }
+    .media {
+      display: none;
+    }
   }
   
   @media (max-width: 570px) {
@@ -362,36 +419,16 @@
     }
   
     .container:before {
-      bottom: 72%;
-      left: 50%;
+      display: none;
+
     }
   
     .container.sign-up-mode:before {
       bottom: 28%;
       left: 50%;
     }
+    .media {
+    display: none;
   }
-  .media {
-    width: 100%;
-    text-align: center;
-    margin-top: 4px;
-    cursor: pointer;
-  
-  }
-  
-  .media ul { 
-    list-style: none;
-  }
-  
-  .media ul li {
-    display: inline-block;
-    margin-right: 15px;
-  }
-  .media li:hover {
-    opacity:0.7;
-    filter: alpha(opacity=70);
-  }
-  .media img {
-   width: 35px;
-   height: 35px;
+ 
   }
