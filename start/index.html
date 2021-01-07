@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>name</title>
+    <link rel="stylesheet" href="start.css" type="text/css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="container">
+    <section id="header">
+        
+            <img src="logo.png" class="logo" >
+            <div class="login-button">
+                <a href="#"><img src="login.svg"></a> 
+             </div>
+            <div class="header-text">
+                <h1>Name</h1>
+                <h3>Z nami osiągniesz więcej</h3>
+               <a href="#about"> <button class="text-button">O nas</button></a>
+            </div>
+    
+    </section>
+    <nav id="side_nav">
+        <ul>
+            <li><a href="#about">O nas</a></li>
+            <li><a  href="#how_works">Jak to działa?</a></li>
+            <li><a  href="#offer">Oferta</a></li>
+            <li><a  href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+    <img src="menu.svg" id="menu"/>
+
+    <section id="about"  data-aos="fade-right">
+        <div class="about-left">
+            <div class="sections-text">
+            <h1> O Nas </h1>
+            <p> Naszym celem jest zapewnienie wszystkim klientom prostego oraz przyjemnego w użytkowaniu systemu zarządzania subskrypcjami oraz newsletterami.
+                Chcemy, aby Państwa subskrypcje znalazły się w jednym miejscu. Zapewniamy łatwość obsługi naszego systemu oraz możliwość nadzorowania terminów płatności subskrypcji.
+            </p>
+            </div>
+        </div>
+
+        <div class="about-right">
+            <img src="about.svg">
+        </div>
+    </section>
+    <section id="how_works" >
+        <div class="sections-text" data-aos="fade-left">
+            <h1> Jak to działa?</h1>
+            <p>Wykonaj trzy proste kroki i ciesz się uporządkowanymi subskypcjami! </p>
+        </div>
+        <div class="how_works_row">
+            <div class="how_works_col" data-aos="fade-left">
+                <img src="register.png" >
+                <h4>Zarejestruj się</h4>
+            </div>
+            <div class="how_works_col" data-aos="fade-left">
+                <img src="add.png" >
+                <h4>Dodaj subskrypcje</h4>
+            </div>
+            <div class="how_works_col" data-aos="fade-left">
+                <img src="manage.png">
+                <h4>Zarządzaj i porządkuj</h4>
+            </div>
+        
+        </div>
+    </section>
+    <section id="offer" data-aos="fade-right">
+        <!--<div class="container offer_row"> -->
+        <div class="offer-left-col">
+            <div class="sections-text">
+                <h1>Nasza oferta</h1>
+                <p>Każdy klient ma możliwość korzystania z platformy bezpłatnie. 
+                Istnieje także możliwość zakupu wersji premium dostosowanej do potrzeb użytkownika.
+                </p>
+            </div>
+        </div>
+            <div class="offer-right-col">
+                <img src="offer.svg">
+            </div>
+
+            <!--
+                miejsce na 3 wersje ofert
+
+            <div class="how_works_row">
+                <div class="how_works_col">
+                    <img src="login.png" >
+                    <h4>Wersja bezpłatna</h4>
+                </div>
+                <div class="how_works_col">
+                    <img src="add.png" >
+                    <h4>Wersja premium basic</h4>
+                </div>
+                <div class="how_works_col">
+                    <img src="manage.png">
+                    <h4>Wersja premium plus</h4>
+                </div>
+            -->
+    </section>
+    <section id="contact">
+            <div class="contact-left-col">
+                
+
+                <form>
+                    <h1>Skontaktuj się z nami</h1>
+                    <input type="text" placeholder="Imię">
+                    <input type="text" placeholder="Nazwisko">
+                    <input type="email" placeholder="E-mail">
+                    <textarea name="opinion_text" rows="5" cols="50"></textarea>
+                    <button class="submit">Wyślij</button>
+                </form>
+                
+            </div>
+            <!--<div class="contact-right-col">
+            </div> -->
+
+    </section>
+    <footer id="footer">
+        © 2021 Copyright Name. All rights reserved.
+
+    </footer>
+</div>
+
+    
+    <script src="var.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            delay: 50,
+            duration: 1000,
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="41" viewBox="0 0 150 41">
+  <g id="login" transform="translate(-101 -250)">
+    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(101 250)" fill="rgba(255,255,255,0)" stroke="#fff" stroke-linejoin="round" stroke-width="2">
+      <rect width="150" height="41" rx="20.5" stroke="none"/>
+      <rect x="1" y="1" width="148" height="39" rx="19.5" fill="none"/>
+    </g>
+    <text id="Zaloguj_się" data-name="Zaloguj się" transform="translate(136 276)" fill="#fff" font-size="13" font-family="MicrosoftPhagsPa-Bold, Microsoft PhagsPa" font-weight="700"><tspan x="0" y="0">ZALOGUJ SIĘ</tspan></text>
+  </g>
+</svg>
