@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="main_log.css" type="text/css"/>
+        <title>Strona główna zalogowanych</title>
+        <script src="app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="toppane">
+                <nav class="navlogo">
+                    <div class="container-fluid">
+                        <span class="nazwa_strony">
+                            <a class="logo" href="#"><img src="logo.png"></a>
+                            <h1>NAZWA STRONY</h1>
+                      <div class="red" id="navbarNav">
+                        <ul class="navbar-nav">
+                        <div class="media" onclick="toggleMedia();">
+                            <ul>
+                                <li><p>Nasze media:</p></li>
+                                <li><img src="fb.svg"/></li>
+                                <li><img src="twitter.svg"/></li>
+                                <li><img src="gmail.svg"/></li>
+                                <li><img src="insta.svg"/></li>
+                                <!----
+                                <li class="nav-item">
+                                    <a href="#button" class="button danger"  aria-current="page" href="#">Wyloguj się</a>
+                                </li>
+                                --->
+                                <li class="profile"><img src="avatar.svg" alt="Avatar"></li>
+                            </ul> 
+                            <ul>
+                                <li class="logout"><img src="logout.png"><a href="#">Wyloguj się</a></li>
+                            </ul>
+                        </div>
+                        
+                        </ul>
+                        </span>
+                        <script type="text/javascript">
+                            function toggleMedia(){
+                            var mediaToggle = document.querySelector('.media');
+                            mediaToggle.classList.toggle('active');
+                        }
+                        </script>
+                      </div>
+                    </div>
+                  </nav>
+
+            </div>
+        <section class="categories">
+            <h1 id="kop">WITAJ <span class="user">USER121344</span>(Tu wstawi się nazwę)</h1>
+            <h2>Konto <span class="premium">PREMIUM</span>/<span class="free">FREE</span>(Zależy od konta)</h2>
+            <h5>DOSTĘNE MIEJSCE NA KOŃCIE:XXGB</h5>
+            <h5>Termin upływu subskrypcji:DD:MM:RRRR(Tylko jeżeli jest premium)</h5>
+            <div class="container">
+                <div class="categories-table">
+                    <div>
+                        <img src="home-solid.svg">
+                        <h2>O nas</h2>
+                    </div>
+                </div>
+                <div class="categories-table">
+                    <div>
+                        <img src="folder-open-solid.svg">
+                        <h2>Baza subskrypcji</h2>
+                    </div>
+                </div>
+                <div class="categories-table">
+                    <div>
+                        <img src="chart-bar-regular.svg">
+                        <h2>Statystyki</h2>
+                    </div>
+                </div>
+                <div class="categories-table">
+                    <div>
+                        <img src="calendar-alt-regular.svg">
+                        <h2>kalendarz</h2>
+                    </div>
+                </div>
+                <div class="categories-table">
+                    <div>
+                        <img src="phone-alt-solid.svg">
+                        <h2>Kontakt</h2>
+                    </div>
+                </div>
+                <div class="categories-table">
+                    <div>
+                        <img src="user-circle-solid.svg">
+                        <h2>Mój profil</h2>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" >
+            <div class="about-left">
+                <div class="sections-text">
+                <h1> NIE WIESZ JESZCZE CO OFERUJEMY? </h1>
+                <p> Dowiedz się więcej o naszych usługach. 
+                </p>
+                <!--
+                    Tu dodamy zmienioną wersję pierwotnej strony o nas
+                -->
+                <a href="index.html">O nas</a>
+                </div>
+            </div>
+    
+            <div class="about-right">
+                <img src="undraw_web_search_eetr.svg">
+            </div>
+        </section>
+        <section id="about-alt"  data-aos="fade-right">
+            <div class="about-right">
+                <img src="undraw_pitching_36ol (1).svg">
+            </div>
+            <div class="about-left">
+                <div class="sections-text">
+                <h1> TWOJA BAZA SUBSKRYPCJI </h1>
+                <p> Sprawdzaj, monitoruj i dodawaj nowe subskrybcje do swojej bazy danych, aby być na bieżąco w ilości i w sumie swoich wydatków przeznaczanych na okresowy dostęp usług. Obsługujemy na wszystkich powszechnych platformach usług
+                </p>
+                <a href="#">Baza subskrypcji</a>
+                </div>
+            </div>
+    
+        </section>
+        <section id="about"  data-aos="fade-right">
+            <div class="about-left">
+                <div class="sections-text">
+                <h1> SPRAWDŹ SWOJE STAYSTYKI </h1>
+                <p> Chcesz wiedzieć ile miesięcznie lub rocznie wydajesz na usługi? Dowiedzieć się która była najstarsza, a która najnowsza subskrybcja? Z jakich metod płatności korzystałeś najczęściej? Na te pytania i na wiele podobnych znajdziesz odpowiedzi właśnie tu:
+                </p>
+                <a href="#">Statystyki</a>
+                </div>
+            </div>
+    
+            <div class="about-right">
+                <img src="undraw_Analytics_re_dkf8 (1).svg">
+            </div>
+        </section>
+        <section id="about"  data-aos="fade-right">
+            <div class="about-right">
+                <img src="undraw_Spreadsheet_re_cn18 (1).svg">
+            </div>
+            <div class="about-left">
+                <div class="sections-text">
+                <h1> ZARZĄDZAJ SWOIM CZASEM </h1>
+                <p> Graficzna pomoc w postaci kalendarza wraz z ustawionymi powiadomieniami jeszcze bardziej ułatwi zarządzanie aktywnymi usługami premium ze wszystkich dostępnych urządzeń na rynku
+                </p>
+                <a href="#">Kalendarz</a>
+                </div>
+            </div>
+    
+        </section>
+        <section id="contact">
+            <div class="contact-left-col">
+                
+
+                <form>
+                    <h1>Skontaktuj się z nami</h1>
+                    <textarea name="opinion_text" rows="5" cols="50"></textarea>
+                    <button class="submit">Wyślij</button>
+                    <p>Lub wykorzystaj czynną całodobową linie telefoniczną:</p>
+                    <p>+48 555 555 5555</p>
+                    <p>+48 555 555 5554</p>
+                </form>
+                
+            </div>
+            <!--<div class="contact-right-col">
+            </div> -->
+
+    </section>
+    <footer id="footer">
+        © 2021 Copyright Name. All rights reserved.
+        <ul>
+            <a href=""><li><p>Zasady ochrony prywatności</p></li><br/></a>
+            <a href=""><li><p>Warunki korzystania</p></li><br/></a>
+            <a href=""><li><p>Preferencje dotyczące plików cookie</p></li><br/></a>
+        </ul>
+
+    </footer>
+    </body>
+</html>
