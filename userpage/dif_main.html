@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="dif_main.css" type="text/css"/>
+        <title>Strona główna zalogowanych</title>
+        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <section id="header">
+               
+                          <!--<span class="nazwa_strony">-->  
+                    <div class="nazwa_strony">
+                        <a href="#"><img class="logo" src="logo.png"></a>
+                        <h1>NAZWA </h1>
+                    <!----
+                                <li class="nav-item">
+                                    <a href="#button" class="button danger"  aria-current="page" href="#">Wyloguj się</a>
+                                </li>
+                                --->
+
+                                        <div class="profile">
+                                        <a href="#"><img src="avatar.svg" alt="Avatar"></a>
+                                        <a href="#" class="logout"><img src="logout.svg"></a>
+                                       </div>
+    
+                           
+                          <!--</span>-->  
+
+            
+                </div>
+
+            
+            <div class="categories">
+                <span class="social-text">Nasze social media</span>
+                <div class="media" onclick="toggleMedia();">
+                        
+                    <ul>
+                        <li><img src="fb.svg"/></li>
+                        <li><img src="twitter.svg"/></li>
+                        <li><img src="gmail.svg"/></li>
+                        <li><img src="insta.svg"/></li>
+                    </ul>
+        </div>
+                <h1 id="kop">WITAJ <span class="user">USER121344</span>(Tu wstawi się nazwę)</h1>
+                <h2>Konto <span class="premium">PREMIUM</span>/<span class="free">FREE</span>(Zależy od konta)</h2>
+                <h5>DOSTĘNE MIEJSCE NA KOŃCIE:XXGB</h5>
+                <h5>Termin upływu subskrypcji:DD:MM:RRRR(Tylko jeżeli jest premium)</h5>
+            </div>
+                <ul class="categories-row">
+                    <li class="categories-content">
+
+                        <img src="my_profile.svg">
+                        <div class="categories-title">
+                            <h2>Mój profil</h2>
+                        </div>   
+ 
+
+                    </li>
+                    <li class="categories-content" >
+
+                            <img src="subskrypcja.svg">
+                            <div class="categories-title">
+                                <h2>Baza subskrypcji</h2>
+                            </div>
+
+                    </li>
+                    <li class="categories-content" >
+
+                            <img src="statystyki.svg">
+                            <div class="categories-title">
+                                <h2>Statystyki</h2>
+                            </div>
+
+                    </li>
+
+                    <li class="categories-content">
+
+                            <img src="calendar.svg">
+                            <div class="categories-title">
+                                <h2>Kalendarz</h2>
+                            </div>
+
+                    </li>
+                    <li class="categories-content" >
+
+                            <img src="kontakt.svg">
+                            <div class="categories-title">
+                                <h2>Kontakt</h2>
+                            </div>
+
+                    </li>
+                    <li class="categories-content" >
+
+                            <img src="premium.svg">
+                            <div class="categories-title">
+                                <h2>Premium</h2>
+                            </div>
+
+                    </li>
+
+                    <!-- 
+                   <div class="categories-col">
+                        <div>
+                        <img src="user-circle-solid.svg">
+                        <h2>Mój profil</h2>
+                        </div>
+                    </div>
+                    -->
+                </ul>
+
+        </section>
+        <section id="about" data-aos="fade-right" >
+            <div class="col-text" >
+                <div class="sections-text">
+                <h1> Czy znasz naszą ofertę? </h1>
+                <p> Dowiedz się więcej o naszych usługach. 
+                </p>
+                <!--
+                    Tu dodamy zmienioną wersję pierwotnej strony o nas
+                -->
+                <a href="index.html">O nas</a>
+                </div>
+            </div>
+    
+            <div class="col-pic">
+                <img src="o_nas.svg">
+            </div>
+        </section>
+        <section id="subs"  data-aos="fade-left">
+
+            <div class="col-pic">
+                <img src="subskrypcje.svg">
+            </div>
+            <div class="col-text">
+                <div class="sections-text">
+                <h1> Twoja baza subskrypcji </h1>
+                <p> Sprawdzaj, monitoruj i dodawaj nowe subskrybcje do swojej bazy danych, aby być na bieżąco w ilości i w sumie swoich wydatków przeznaczanych na okresowy dostęp usług. Obsługujemy na wszystkich powszechnych platformach usług
+                </p>
+                <a href="#">Baza subskrypcji</a>
+                </div>
+            </div>
+    
+        </section>
+        <section id="statistics"  data-aos="fade-right">
+            <div class="col-text">
+                <div class="sections-text">
+                <h1> Sprawdź swoje statystyki </h1>
+                <p> Chcesz wiedzieć ile miesięcznie lub rocznie wydajesz na usługi? Dowiedzieć się która była najstarsza, a która najnowsza subskrybcja? Z jakich metod płatności korzystałeś najczęściej? Na te pytania i na wiele podobnych znajdziesz odpowiedzi właśnie tu:
+                </p>
+                <a href="#">Statystyki</a>
+                </div>
+            </div>
+    
+            <div class="col-pic">
+                <img src="analytics.svg">
+            </div>
+
+        </section>
+        <section id="calendar"  data-aos="fade-left">
+            <div class="col-pic">
+                <img src="kalendarz.svg">
+            </div>
+            <div class="col-text">
+                <div class="sections-text">
+                <h1> Zarządzaj swoim czasem </h1>
+                <p> Graficzna pomoc w postaci kalendarza wraz z ustawionymi powiadomieniami jeszcze bardziej ułatwi zarządzanie aktywnymi usługami premium ze wszystkich dostępnych urządzeń na rynku
+                </p>
+                <a href="#">Kalendarz</a>
+                </div>
+            </div>
+    
+        </section>
+        <section id="contact">
+            <div class="contact-left-col">
+
+                <form>
+                    <h1>Skontaktuj się z nami</h1>
+                    <textarea name="opinion_text" rows="5" cols="50"></textarea>
+                    <button class="submit">Wyślij</button>
+                    <p>Lub wykorzystaj czynną całodobową linie telefoniczną:</p>
+                    <p>+48 555 555 5555</p>
+                    <p>+48 555 555 5554</p>
+                </form>
+                
+            </div>
+
+        </section>
+            <footer id="footer">
+             © 2021 Copyright Name. All rights reserved.
+                <ul>
+                    <a href=""><li><p>Zasady ochrony prywatności</p></li><br/></a>
+                    <a href=""><li><p>Warunki korzystania</p></li><br/></a>
+                    <a href=""><li><p>Preferencje dotyczące plików cookie</p></li><br/></a>
+                </ul>
+
+            </footer>
+        </div>
+
+        <script type="text/javascript">
+            function toggleMedia(){
+            var mediaToggle = document.querySelector('.media');
+            mediaToggle.classList.toggle('active');
+        }
+        </script>
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 200,
+                delay: 50,
+                duration: 1000,
+            });
+        </script>
+    </body>
+</html>
