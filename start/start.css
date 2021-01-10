@@ -226,11 +226,6 @@ nav ul li a {
   flex-wrap: wrap;
 }
 
-/*.offer_row {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
- } */
 
 .offer-left-col {
   flex-basis: 50%;
@@ -243,6 +238,163 @@ nav ul li a {
 .offer-right-col img {
   width: 90%;
 }
+
+.wrapper{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.wrapper .table{
+    flex-basis: 30%;
+  background: #fff;
+  width: calc(33% - 20px);
+  padding: 30px 30px;
+  position: relative;
+  box-shadow: 0 5px 10px #000;
+  border-radius: 10px;
+}
+
+.table .price-section{
+  display: flex;
+  justify-content: center;
+}
+.table .price-area{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.table:hover {
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+.price-area .inner-area{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  line-height: 117px;
+  text-align: center;
+  color: #000;
+  position: relative;
+}
+.price-area .inner-area .text{
+  font-size: 25px;
+  font-weight: 400;
+  position: absolute;
+  top: -10px;
+  left: 17px;
+}
+.price-area .inner-area img{
+    margin: 1rem auto;
+    width: 70%;
+}
+
+.table .package-name{
+  width: 100%;
+  height: 2px;
+  margin: 35px 0;
+  position: relative;
+}
+.table .package-name::before{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 25px;
+  font-weight: 500;
+  background: #fff;
+  padding: 0 15px;
+  transform: translate(-50%, -50%);
+}
+.table .features li{
+  margin-bottom: 15px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.features li .list-name{
+  font-size: 1rem;
+  font-weight: 400;
+}
+.features li .icon{
+  font-size: 15px;
+  margin-right: 1.3rem;
+}
+.features li .icon.check{
+  color: #2db94d;
+}
+.features li .icon.cross{
+  color: #cd3241;
+}
+
+.table .price h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.basic ::selection,
+.basic .price-area,
+.basic .inner-area{
+    background: #00B0FF;
+}
+.premium ::selection,
+.premium .price-area,
+.premium .inner-area {
+  
+  background: #F29305;
+}
+
+.ultimate ::selection,
+.ultimate .price-area,
+.ultimate .inner-area{
+  background: #1F92C5;
+}
+.basic .package-name{
+    background: #84cbed;
+}
+.premium .package-name{
+
+  background: #ffecb3;
+}
+.ultimate .package-name{
+  background: #62a6c4;
+}
+.basic .package-name::before{
+  content: "Free";
+}
+.premium .package-name::before{
+  content: "Basic";
+  font-size: 24px;
+}
+.ultimate .package-name::before{
+  content: "Premium";
+  font-size: 24px;
+}
+
+@media (max-width: 1020px) {
+  .wrapper .table{
+    width: calc(50% - 20px);
+    margin-bottom: 40px;
+  }
+}
+
+/*
+@media (max-width: 780px) {
+  .wrapper .table{
+    width: 100%;
+    flex-basis: 100%;
+  }
+}
+*/
+::selection{
+  color: #fff;
+}
+
 
 #contact {
     height: 100vh;
@@ -405,6 +557,13 @@ form textarea {
         flex-basis:100%;
         text-align: center;
       }
+
+      .wrapper .table{
+        width: 100%;
+        flex-basis: 100%;
+      }
+
+
 
       #contact {
         background: url("bgbottom.svg");
