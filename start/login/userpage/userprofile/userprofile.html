@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="userprofile.css" type="text/css"/>
+        <title>Strona profilowa</title>
+    <body>
+        <div class="container">
+            <section id="header">
+                <div class="nazwa_strony">
+                    <a href="#"><img class="logo" src="logo.png"></a>
+                    <h1>NAZWA </h1>
+                         <div class="profile">
+                            <a href="#"><img src="avatar.svg" alt="Avatar"></a>
+                            <a href="#" class="logout"><img src="logout.svg"></a>
+                        </div>
+                </div>
+                <div class="rodzaj">
+                    <h2>Twój Profil</h2>
+                    <ul class=nav>
+                        <li class="button-dropdown" onclick="myFunction()"><a href="#" class="dropdown-toggle">Zarządzanie kontem</a></li>
+                            <ul class="dropdown-menu">
+                                <label for="doł">E-mail</label><br>
+                                <input type="text" id="doł" name="email" value="koko@gmail.com" disabled><br><br>
+                                <label for="doł">Imię</label><br>
+                                <input type="text" id="doł" name="fname" value="Jajko" disabled><br><br>
+                                <label for="doł">Nazwisko</label><br>
+                                <input type="text" id="doł" name="lname" value="Kokosz" disabled><br><br>
+                                <label for="doł">Data Urodzenia</label><br>
+                                <input type="text" id="doł" name="date" value="15.06.2020" disabled><br><br>
+                                <label for="doł">Płeć</label><br>
+                                <input type="text" id="doł" name="gender" value="Kobieta" disabled><br><br>
+                                <label for="doł">Pomocniczny adres e-mail</label><br>
+                                <input type="text" id="doł" name="email2" value="kokoszjajcarz@gmail.com" disabled><br><br>
+                                <label for="doł">Numer Telefonu</label><br>
+                                <input type="text" id="doł" name="phone" value="514-666-6666" disabled><br><br>
+                                <button>Edycja</button>
+                            </ul>
+                        <li class="button-dropdown"><a href="#">Ustawienia strony</a></li>
+                            <ul class="dropdown-menu">
+                                <label for="doł">Domyślny język na stronie</label><br>
+                                <input type="text" placeholder="Polski" list="defaultTels" />
+                                    <datalist id="defaultTels" >
+                                        <option value="Polski" >
+                                        <option value="English">
+                                    </datalist>
+                            </ul>
+                        <li class="button-dropdown"><a href="#">Zarządzanie subskrypcją</a></li>
+                            <ul class="dropdown-menu-2">
+                                <label for="sub" id="sub">Konto:</label><br>
+                                <p2>    Aktywne/Nieaktywne(wtedy poniższe opcje są nie wyświetlane)</p2><br>
+                                <label for="sub" id="sub">Szczegóły subskrypcji:</label><br>
+                                    <p1>- Typ subskrypcji:</p1><br>
+                                    <p2>   #Typ subskrypcji</p><br>
+                                    <p1>- Następny okres</p1><br>
+                                    <p2>   #Data</p2><br>
+                                    <button>Anuluj subskrypcję</button>
+                        </ul>
+                        <li class="button-dropdown"><a href="#">Ważne linki</a></li>
+                            <ul class="dropdown-menu">
+                                <a href="https://www.kti.ue.poznan.pl">Strona katedry</a>
+                            </ul>
+                        
+                        <li class="button-dropdown"><a href="#">Zarządzanie kalendarzem</a></li>
+                    </ul>
+                </div>
+                <div class="col-pic">
+                    <img src="undraw_personal_information_962o.svg">
+                </div>
+                <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+                <script src="dropdown.js"></script>
+            </section>
+    <footer id="footer">
+        © 2021 Copyright Name. All rights reserved.
+        <ul>
+            <a href=""><li><p>Zasady ochrony prywatności</p></li></a>
+            <a href=""><li><p>Warunki korzystania</p></li></a>
+            <a href=""><li><p>Preferencje dotyczące plików cookie</p></li></a>
+        </ul>
+
+    </footer>
+        </div>
+        </div>
+    </body>
