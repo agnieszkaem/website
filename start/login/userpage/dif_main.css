@@ -4,6 +4,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+}
+
+* a:visited {
+	color: #1F92C5;
 }
 
 html {
@@ -155,8 +160,7 @@ body{
 }
 
  .categories-content
-{
-
+					{
 	flex-basis: 25%;
 	text-align: center;
 	border: transparent;
@@ -177,7 +181,7 @@ body{
 	width: 6rem;
 }
 
-  .categories-title {
+  .categories-title a {
 	  margin: auto;
 	font-weight: 400;
 	color:#1F92C5;
