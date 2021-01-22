@@ -28,12 +28,20 @@ html, body {
     background:linear-gradient( #040FD9, #1F92C5);
     min-height: 8vh;
     width: 100%;
+    display:flex;
   }
   #header h1{
       font-size: 2rem;
       color: #fff;
-      padding: 1.5rem 3rem;
+      padding: 1.5rem 0;
   }
+
+  .logo {
+    flex-basis: 33.3%;
+    width: 60px;
+    margin: 1rem;
+  }
+  
 
   .logout {
     flex-basis: 33.3%;
@@ -300,19 +308,4 @@ html, body {
         width: 100%;
         flex-basis: 100%;
       }
-      .wrapper {
-        padding: 1rem;
-
-      }
-      
   }
-  
-  @media (max-width:600px) {
-    .table .price h3 {
-      font-size: 1.2rem;
-      transition: 0.5s ease-in-out;
-
-    }
-  
-  }
-
