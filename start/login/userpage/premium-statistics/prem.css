@@ -310,6 +310,7 @@ html, body {
   @media (max-width:600px) {
     .table .price h3 {
       font-size: 1.2rem;
+      transition: 0.5s ease-in-out;
 
     }
   
