@@ -383,14 +383,8 @@ nav ul li a {
   }
 }
 
-/*
-@media (max-width: 780px) {
-  .wrapper .table{
-    width: 100%;
-    flex-basis: 100%;
-  }
-}
-*/
+
+
 ::selection{
   color: #fff;
 }
@@ -409,11 +403,6 @@ nav ul li a {
 
 }
 
-/* .contact-row {
-  display: flex;
-  align-items:center;
-  flex-wrap: wrap;
-} */
 
 .contact-left-col  {
   flex-basis: 50%;
@@ -563,6 +552,10 @@ form textarea {
         flex-basis: 100%;
       }
 
+      .wrapper {
+        width: 100%;
+      }
+
 
 
       #contact {
@@ -628,6 +621,10 @@ form textarea {
       height: 40px;
       width: 150px;
       font-size: 0.7rem;
+    }
+    .wrapper .price h3 {
+      font-size: 1.3rem;
+      transition: 0.5 ease-in-out;
     }
 
 
