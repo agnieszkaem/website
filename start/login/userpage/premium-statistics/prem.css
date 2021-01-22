@@ -300,4 +300,18 @@ html, body {
         width: 100%;
         flex-basis: 100%;
       }
+      .wrapper {
+        padding: 1rem;
+
+      }
+      
   }
+  
+  @media (max-width:600px) {
+    .table .price h3 {
+      font-size: 1.2rem;
+
+    }
+  
+  }
+
