@@ -25,7 +25,9 @@ html, body {
     }
 
 #elements {
-    min-height: 85vh;
+    margin: 2rem;
+    min-height: 80vh;
+    
 }
 
 .elements-row {
@@ -80,9 +82,11 @@ html, body {
     
     .section-name h3 {
         font-size: 1.25em;
+        transition: all 1s;
     }
     .data h1 {
-        font-size: 2em;
+        font-size: 1.7rem;
+        transition: all 1s;
     }
 
 
@@ -92,17 +96,20 @@ html, body {
     
     .elements-row {
         padding: 0;
-        width: 100%
+        width: 100%;
+        transition: all 1s;
     }
 
     .elements-col {
         width: 100%;
         flex-basis: 100%;
         margin: 1rem;
+        transition: all 1s;
     }
 
     .data h1 {
         font-size: 2em;
+        transition: all 1s;
     }
 
 }

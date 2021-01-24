@@ -291,6 +291,7 @@ html, body {
     font-family: "Poppins", sans-serif;
     background:  #1F92C5;
     width: 100%;
+    color: #fff;
 
     }
 
@@ -299,6 +300,7 @@ html, body {
     .wrapper .table{
       width: calc(50% - 20px);
       margin-bottom: 40px;
+      transition: all 1s;
     }
   }
   
@@ -307,5 +309,6 @@ html, body {
     .wrapper .table{
         width: 100%;
         flex-basis: 100%;
+        transition: all 1s;
       }
   }

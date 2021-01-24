@@ -327,6 +327,10 @@ form textarea {
 	text-transform: uppercase;
   
   }
+  form p {
+	  color: #fff;
+  }
+
 
 #footer {
 	padding: 1rem;
@@ -334,16 +338,9 @@ form textarea {
 	bottom: 0;
 	font-family: "Poppins", sans-serif;
 	background:  #1F92C5;
+	color: #fff;
 	}
-#footer li {
-	font-size: 12px;
-	display:flex;
-	overflow: auto;
-	float: right;
-}
-#footer a {
-	color:inherit;
-}
+
 
 
 @media (max-width: 840px) {
@@ -413,7 +410,8 @@ form textarea {
     	}
     
     #footer {
-      padding: 0.7rem;
+	  padding: 0.7rem;
+	  color: #fff;
 		}
 }
 

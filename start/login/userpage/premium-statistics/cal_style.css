@@ -21,7 +21,7 @@ a {
 
 table {
   width: 90%;
-  min-height:70vh;
+  min-height:60vh;
   margin: auto;
   padding: 2rem 0;
 
@@ -41,7 +41,7 @@ table {
 .month-name {
   padding-top: 1rem;
   color: #fff;
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 
@@ -62,7 +62,7 @@ table {
 
 .year {
   color: #fff;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
 }
 
 
@@ -141,24 +141,33 @@ table {
     .back {
       position: relative;
       right: 2rem;
+      transition: all 0.8s;
     }
     
     .next {
       position: relative;
       left: 2rem;
+      transition: all 0.8s;
     }
   }
   
   @media (max-width: 680px) {
     table {
       width: 100%;
+      transition: all 0.8s;
+    }
+    .month-name {
+      font-size: 1.5rem;
+      transition: all 0.8s;
     }
     .weekdays td, .days td {
       width: 12.5%;
       font-size: 1.5rem;
+      transition: all 0.8s;
     }
     .add {
       font-size: 1.3em;
+      transition: all 0.8s;
     }
 
   }
@@ -170,6 +179,6 @@ table {
     }
     td .sub {
       font-size: 0.7rem;
-      transition: 0.5s ease-in-out;
+      transition: all 0.8s;
     }
   }
