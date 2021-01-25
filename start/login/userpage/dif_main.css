@@ -35,6 +35,7 @@ body{
 	*/
 }
 
+
 .nazwa_strony {
 	display: flex;
 	flex-direction: row;
@@ -45,7 +46,8 @@ body{
 }
 .nazwa_strony h1 {
 	position: relative;
-	margin: 1.5rem;
+	font-size: 2rem;
+	padding: 1.5rem 0;
 	color: #fff;
 
 }
@@ -327,6 +329,10 @@ form textarea {
 	text-transform: uppercase;
   
   }
+  form p {
+	  color: #fff;
+  }
+
 
 #footer {
 	padding: 1rem;
@@ -334,16 +340,9 @@ form textarea {
 	bottom: 0;
 	font-family: "Poppins", sans-serif;
 	background:  #1F92C5;
+	color: #fff;
 	}
-#footer li {
-	font-size: 12px;
-	display:flex;
-	overflow: auto;
-	float: right;
-}
-#footer a {
-	color:inherit;
-}
+
 
 
 @media (max-width: 840px) {
@@ -413,7 +412,8 @@ form textarea {
     	}
     
     #footer {
-      padding: 0.7rem;
+	  padding: 0.7rem;
+	  color: #fff;
 		}
 }
 
@@ -422,5 +422,10 @@ form textarea {
 	  flex-basis: 100%;
 	  transition: 0.8s ease-in-out;
 
+	}
+	.nazwa_strony h1 {
+		top: 0.6rem;
+		font-size: 1.7rem;
+		transition: all 0.8s;
 	}
   }

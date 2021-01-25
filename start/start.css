@@ -14,7 +14,7 @@ html, body {
   font-family: "Poppins", sans-serif;
 
 }
-/*
+
  .header-text h1 {
     background: linear-gradient(to right,#095fab 10%, #25abe8 50%, #fff 60%);
 		background-size: auto auto;
@@ -35,7 +35,7 @@ html, body {
 		background-position: 200% center;
 	}
 }
-*/
+
 
 .container {
   position: relative;
@@ -82,7 +82,7 @@ html, body {
   color: #fff;
 }
 .header-text h1 {
-  font-size:7rem;
+  font-size:6rem;
   margin: auto;
 }
 .header-text h3 {
@@ -561,6 +561,7 @@ form textarea {
       #contact {
         background: url("bgbottom.svg");
         background-size:cover;
+        transition: all 0.5s;
       }
 
       .contact-left-col  {
@@ -593,6 +594,7 @@ form textarea {
     
     #footer {
       padding: 0.7rem;
+      color: #fff;
 
 
 
@@ -604,6 +606,8 @@ form textarea {
       display: flex;
       align-items: center;
       justify-content: center;
+      font-size: 3rem;
+      transition: all 0.5s;
     
     }
     .header-text h3 {
