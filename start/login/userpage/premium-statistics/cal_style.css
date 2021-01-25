@@ -20,7 +20,7 @@ a {
 
 
 table {
-  width: 90%;
+  width: 70%;
   min-height:60vh;
   margin: auto;
   padding: 2rem 0;
@@ -31,7 +31,7 @@ table {
 .month {
     padding: 2rem 10;
     width: 100%;
-    background: #1367b6;
+    background: #F29305  ;
     text-align: center;
     border-radius: 10px 10px 0 0;
     
@@ -47,7 +47,7 @@ table {
 
 .back {
   position: relative;
-  right: 8em;
+  right: 7em;
 }
 
 .back:hover ,.next:hover  {
@@ -122,7 +122,7 @@ table {
 
   .days .active {
     padding: 5px;
-    background: #F29305;
+    background: #1F92C5;
     color: #fff;
   }
   
@@ -135,18 +135,22 @@ table {
 
 
 
-  @media screen and (max-width:720px) {
-    .weekdays td, .days td {width: 13.1%;}
+  @media (max-width:850px) 
+  {
+    .weekdays td, .days td {
+    
+       width: 13.1%;
+    }
 
     .back {
       position: relative;
-      right: 2rem;
+      right: 2em;
       transition: all 0.8s;
     }
     
     .next {
       position: relative;
-      left: 2rem;
+      left: 2em;
       transition: all 0.8s;
     }
   }

@@ -120,7 +120,7 @@ margin-right: 1rem;
 .rodzaj {  
     box-shadow: 0 15px 25px rgba(0,0,0,0.4);
     border-radius: 10px;
-    width: 80%;
+    width: 70%;
     justify-content: center;
     align-items: center; 
     padding: 0 2rem;
@@ -201,6 +201,8 @@ margin-right: 1rem;
     color: #000;
     text-decoration: none;
 }
+
+/*
 .dropdown-menu {
     display: none;
 }
@@ -263,6 +265,7 @@ margin-right: 1rem;
     cursor: pointer;
     transition: 0.5s;
 }
+ */
 .picture {
 
    position: relative;
