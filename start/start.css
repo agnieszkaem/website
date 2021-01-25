@@ -381,6 +381,10 @@ nav ul li a {
     width: calc(50% - 20px);
     margin-bottom: 40px;
   }
+  .header-text h1 {
+    font-size: 5rem;
+    transition:  all 0.8s;
+  }
 }
 
 
@@ -399,6 +403,7 @@ nav ul li a {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    transition:  all 0.8s;
 
 
 }
@@ -413,6 +418,7 @@ nav ul li a {
   color: #fff;
   font-size: 2rem;
   padding-bottom: 2rem;
+  transition:  all 0.8s;
   
 }
 
@@ -504,11 +510,7 @@ form textarea {
         width:40px;
         right: 28px;
       }
-      /*
-      .text-button {
-        padding: 1rem 2rem;
-      } 
-      */
+      
       .about-left, .about-right {
         flex-basis: 100%;
 
@@ -607,7 +609,7 @@ form textarea {
       align-items: center;
       justify-content: center;
       font-size: 3rem;
-      transition: all 0.5s;
+      transition: all 0.8s;
     
     }
     .header-text h3 {
