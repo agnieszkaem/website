@@ -139,7 +139,7 @@
 
   .button {
     width: 220px;
-    background:-webkit-linear-gradient(left, #040FD9, #0B3ED9);
+    background:-webkit-linear-gradient(left, #040FD9, #1F92C5);
     border: none;
     outline: none;
     height: 40px;
@@ -153,7 +153,7 @@
   }
   
   .button:hover {
-    background:-webkit-linear-gradient(right, #040FD9, #0B3ED9);
+    background:-webkit-linear-gradient(right, #040FD9, #1F92C5);
     opacity: 0.8;
   }
   .panels-container {
@@ -337,11 +337,7 @@
   
     .panel .content { 
       display: none;
-      /*
-      padding-right: 15%;
-      transition: transform 0.9s ease-in-out;
-      transition-delay: 0.8s;
-      */
+
     }
   
     .panel h3 {
@@ -361,15 +357,7 @@
   
     .container:before {
       display:none;
-     /* width: 1500px;
-      height: 1500px;
-      transform: translateX(-50%);
-      left: 50%;
-      bottom: 69%;
-      right: initial;
-      top: initial;
-      transition: 2s ease-in-out;
-      */
+
     }
     .media {
       display: none;
