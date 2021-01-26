@@ -247,6 +247,9 @@ body{
 	margin: auto;
 
 }
+.sections-text h1 {
+	text-align: left;
+}
 
 .sections-text {
 max-width: 90%;
