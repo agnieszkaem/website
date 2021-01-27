@@ -122,6 +122,7 @@ html, body {
     height: 100%;
     position: relative;
     transition: width 3000ms linear;
+    border-radius: 8px;
   }
   
   .bar-inner:after {
