@@ -603,12 +603,15 @@ form textarea {
   }
 
   @media (max-width: 680px) {
+    .header-text {
+      margin: 1.5rem 2rem;
 
+    }
     .header-text h1 {
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 3rem;
+      font-size: 2.2rem;
       transition: all 0.8s;
     }
 
@@ -632,7 +635,13 @@ form textarea {
       font-size: 1.3rem;
       transition: 0.5 ease-in-out;
     }
-
+    .login-button {
+      right: 50px;
+    }
+    .login-button img {
+      width:80%;
+      right: 80px;
+    }
 
 
 
