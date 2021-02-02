@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+* a {
+    text-decoration: none;
+}
+
+html {
+      scroll-behavior: smooth;
+      }
+      
+html, body {
+    font-family: "Poppins", sans-serif;
+      
+    }
+    .container {
+        position: relative;
+        width: 100%;
+        background-color: #fff;
+        min-height: 100vh;
+        overflow: hidden;
+    }
+
+    #subs {
+        width: 100%;
+        padding: 1.5rem;
+    }
+    #subs h3, #newsletters h3 {
+        font-size: 2.4rem;
+        color:#F29305;
+        text-align: center;
+        text-transform: uppercase;
+    }
+   
+    .all-subs {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        transition: all 0.8s;
+    }
+
+    .sub-element {
+        margin: 1.3rem;
+        padding: 1rem;
+        box-shadow: 0 5px 10px #000;
+        border-radius: 10px;
+
+    }
+
+    .newsletter-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 2rem;
+    }
+
+    .list-col{
+        flex-basis: 50%;
+        margin: 0 auto;
+        padding: 1rem;
+        }
+        .new-element{
+            margin: 1rem;
+        }
+        .list-col ul{
+        counter-reset: li;
+        list-style: none;
+        font-size: 15px;
+        padding: 0;
+        margin-bottom: 4em;
+        }
+        .list-co ul{
+        margin: 0 0 0 2em;
+        }
+        .ul li {
+            list-style: none;
+        }
+        .list-col a{
+        position: relative;
+        display: block;
+        padding: .4em .4em .4em 2em;
+        *padding: .4em;
+        margin: .5em 0;
+        color: #000;
+        text-decoration: none;
+        border: 1px solid #000;
+        border-radius: .3em;
+        border-radius: 10em;
+        transition: all .2s ease-in-out;
+        }
+        
+        .list-col a:hover{
+        background: #d6d4d4;
+        text-decoration:none;
+        transform: scale(1.05);
+        }
+        
+        .list-col  a:before{
+        content: "";
+        position: absolute;
+        left: -1.3em;
+        top: 50%;
+        margin-top: -1.3em;
+        background:#1F92C5;
+        height: 2em;
+        width: 2em;
+        line-height: 2em;
+        border: .3em solid #fff;
+        text-align: center;
+        font-weight: bold;
+        -moz-border-radius: 2em;
+        -webkit-border-radius: 2em;
+        border-radius: 2em;
+        color:#FFF;
+        }
+
+@media (max-width:500px) {
+    #subs h3, #newsletters h3 {
+        font-size: 1.8rem;
+        transition: all 0.8s;
+
+
+    }
+    .sub-element {
+        margin: 0.7rem;
+        width:40%;
+        transition: all 0.8s;
+    }
+
+    .sub-element img {
+        width:60%;
+        margin: 0 auto;
+        display: block;
+        transition: all 0.8s;
+
+    }
+    .list-col {
+        flex-basis: 100%;
+        padding: 0;
+        transition: all 0.8s;
+    }
+}
