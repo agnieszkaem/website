@@ -1,35 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stati.css" type="text/css">
-    <link rel="stylesheet" href="prem.css" type='text/css'>
+    <link rel="stylesheet" href="styles/stati.css" type="text/css">
+    <link rel="stylesheet" href="styles/prem.css" type='text/css'>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="icon" href="logo.png">
+    <link rel="icon" href="images/logo.png">
     <title>Statystyki</title>
 </head>
 <body>
     <div class="container">
         <section id="header">
-            <a href="#"><img class="logo" src="logo.png"></a>
+            <a href="dif_main.html"><img class="logo" src="images/logo.png"></a>
             <h1> Subcontrol</h1>
             <div class="logout">
-              <a href="#" ><img src="logout.svg"></a>
+              <a href="index.html" ><img src="images/logout.svg"></a>
              </div>
         </section>
     
         <nav id="side_nav">
             <ul>
                 <li><a>. . .</a></li>
-                <li><a href="#">Strona główna</a></li>
-                <li><a  href="#">Mój profil</a></li>
-                <li><a  href="#">Premium</a></li>
-                <li><a  href="#">Baza subskrypcji</a></li>
-                <li><a  href="#">Statystyki</a></li>
+                <li><a href="dif_main.html">Strona główna</a></li>
+                <li><a  href="userprofile.html">Mój profil</a></li>
+                <li><a  href="premium.html">Premium</a></li>
+                <li><a  href="baza.html">Baza subskrypcji</a></li>
+                <li><a  href="stats.html">Statystyki</a></li>
             </ul>
         </nav>
-        <img src="menu.svg" id="menu"/>
+        <img src="images/menu.svg" id="menu"/>
         <section class="chart">
             <div class="month-stats"><h2>STATYSTYKI NA STYCZEŃ</h2></div>
             <h4>Zapłacono</h4>
@@ -58,7 +58,7 @@
                         <h3>PŁATNOŚCI</h3>
                     </div>
                     <div class="data">
-                    <img src="paid.svg"> 
+                    <img src="images/paid.svg"> 
                     <h1> 226,44zł</h1>
                     </div>
                 </div>
@@ -67,7 +67,7 @@
                         <h3>ZAOSZCZĘDZONO</h3>
                     </div>
                     <div class="data">
-                    <img src="notpaid.svg">
+                    <img src="images/notpaid.svg">
                     <h1>18,79zł</h1>
                     </div>
                 </div>
@@ -78,7 +78,7 @@
                         <h3>SUBSKRYPCJE</h3>
                     </div>
                     <div class="data">
-                    <img src="subscription.svg">
+                    <img src="images/subscription.svg">
                     <h1> 6</h1>
                     </div>
                 </div>
@@ -87,7 +87,7 @@
                         <h3>NEWSLETTERY</h3>
                     </div>
                     <div class="data">
-                    <img src="newsletters.svg">
+                    <img src="images/newsletters.svg">
                         
                             <h1>7</h1>
                 </div>
@@ -107,7 +107,7 @@
         </div>
 
                 
-        <script src="menu.js"></script>
-        <script src="percentage.js"></script>
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/percentage.js"></script>
 </body>
 </html>

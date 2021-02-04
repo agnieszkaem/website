@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/userprofile.css" type="text/css"/>
+        <link rel="stylesheet" href="styles/prem.css" type="text/css">
+        
+        <title>Subcontrol</title>
+        <link rel="icon" href="images/logo.png">
+    <body>
+        <div class="container">
+            <section id="header">
+                <a href="dif_main.html"><img class="logo" src="images/logo.png"></a>
+                <h1> Subcontrol </h1>
+                <div class="logout">
+                  <a href="index.html" ><img src="images/logout.svg"></a>
+                 </div>
+            </section>
+        
+            <nav id="side_nav">
+                <ul>
+                    <li><a>. . .</a></li>
+                    <li><a href="dif_main.html">Strona główna</a></li>
+                    <li><a  href="userprofile.html">Mój profil</a></li>
+                    <li><a  href="premium.html">Premium</a></li>
+                    <li><a  href="baza.html">Baza subskrypcji</a></li>
+                    <li><a  href="stats.html">Statystyki</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.svg" id="menu"/>
+              <section id="profile">
+
+
+                <div class="rodzaj">
+                    <h2>Twój Profil</h2>
+                    <ul>
+                        <li class="button-dropdown" onclick="myFunction()"><a href="#" class="dropdown-toggle">Zarządzanie kontem</a></li>
+                        <li class="button-dropdown"><a href="#">Ustawienia strony</a></li>
+                        <li class="button-dropdown"><a href="#">Zarządzanie subskrypcjami</a></li>
+                        <li class="button-dropdown"><a href="#">Zarządzanie kalendarzem</a></li>
+                        <li class="button-dropdown"><a href="#">Usuń konto</a></li>
+                    </ul>
+                    <div class="picture">
+                        <img src="images/neww.svg">
+                    </div>
+
+                </div>
+            
+            </section>
+
+             <footer id="footer">
+                © 2021 Copyright Subcontrol. All rights reserved.
+            </footer>
+        
+        </div> 
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/dropdown.js"></script>
+
+    </body>

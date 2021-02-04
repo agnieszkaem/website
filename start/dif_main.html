@@ -1,52 +1,52 @@
 <!DOCTYPE html>
-<html lang="pl-PL">
+<html lang="pl">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="dif_main.css" type="text/css"/>
-        <title>Strona główna zalogowanych</title>
-        <link rel="icon" href="logo.png">
+        <link rel="stylesheet" href="styles/dif_main.css" type="text/css"/>
+        <title>Subcontrol</title>
+        <link rel="icon" href="images/logo.png">
         <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     </head>
     <body>
+
         <div class="container">
             <section id="header">
                
 
                     <div class="nazwa_strony">
-                        <a href="#"><img class="logo" src="logo.png"></a>
+                        <a href="dif_main.html"><img class="logo" src="images/logo.png"></a>
                         <h1>Subcontrol </h1>
 
                         <div class="profile">
-                                <a href="#"><img src="avatar.svg" alt="Avatar"></a>
+                                <a href="userprofile.html"><img src="images/avatar.svg" alt="Avatar"></a>
                             </div>
                                 <div class="logout">
-                                    <a href="~/index.html" ><img src="logout.svg"></a>
+                                    <a href="index.html" ><img src="images/logoutw.svg"></a>
                                 </div>
-                               
-                        
-    
-                </div>
+                    </div>
+                
 
             
-            <div class="categories">
+             <div class="categories">
                 <span class="social-text">Nasze social media</span>
-                <div class="media" onclick="toggleMedia();">
+                <div class="media">
                         
                     <ul>
-                        <li><img src="fb.svg"/></li>
-                        <li><img src="twitter.svg"/></li>
-                        <li><img src="gmail.svg"/></li>
-                        <li><img src="insta.svg"/></li>
+                        <li><img src="images/fb.svg"/></li>
+                        <li><img src="images/twitter.svg"/></li>
+                        <li><img src="images/gmail.svg"/></li>
+                        <li><img src="images/insta.svg"/></li>
                     </ul>
-        </div>
+                </div>
+        
 
             </div>
                 <ul class="categories-row">
                     <li class="categories-content">
-                        <a href="userprofile/userprofile.html">
-                            <img src="my_profile.svg">
+                        <a href="userprofile.html">
+                            <img src="images/my_profile.svg">
                             <div class="categories-title">
                              <h2>Mój profil</h2> 
                             </div>
@@ -55,8 +55,8 @@
 
                     </li>
                     <li class="categories-content" >
-                        <a href="#">
-                            <img src="subskrypcja.svg">
+                        <a href="baza.html">
+                            <img src="images/subskrypcja.svg">
                             <div class="categories-title">
                                <h2>Baza subskrypcji</h2>
                             </div>
@@ -64,9 +64,9 @@
 
                     </li>
                     <li class="categories-content" >
-                        <a href="premium-statistics/stats.html">
+                        <a href="stats.html">
 
-                            <img src="statystyki.svg">
+                            <img src="images/statystyki.svg">
                             <div class="categories-title">
                               <h2>Statystyki</h2> 
                             </div>
@@ -75,9 +75,9 @@
                     </li>
 
                     <li class="categories-content">
-                        <a href="premium-statistics/calendar.html">
+                        <a href="calendar.html">
 
-                            <img src="calendar.svg">
+                            <img src="images/calendar.svg">
                             <div class="categories-title">
                                  <h2>Kalendarz</h2> 
                             </div>
@@ -85,9 +85,9 @@
 
                     </li>
                     <li class="categories-content" >
-                        <a href="#"> 
+                        <a href="#contact"> 
 
-                            <img src="kontakt.svg">
+                            <img src="images/kontakt.svg">
                             <div class="categories-title">
                                 <h2>Kontakt</h2> 
                             </div>
@@ -95,8 +95,8 @@
 
                     </li>
                     <li class="categories-content" >
-                         <a href="premium-statistics/premium.html">
-                            <img src="premium.svg">
+                         <a href="premium.html">
+                            <img src="images/premium1.svg">
                             <div class="categories-title">
                                <h2>Premium</h2>
                         </a>
@@ -105,33 +105,34 @@
                     </li>
 
                 </ul>
+            </div>
 
-        </section>
+
         <section id="about" data-aos="fade-right" >
             <div class="col-text" >
                 <div class="sections-text">
-                <h1> Czy znasz naszą ofertę? </h1>
+                <h1> Posiadaj swoje subskrypcje zawsze pod kontrolą </h1>
                 <p> Dowiedz się więcej o naszych usługach. 
                 </p>
-                <a href="start\index.html">O nas</a>
+                <a href="#subs">&#8628;</a>
                 </div>
             </div>
     
             <div class="col-pic">
-                <img src="o_nas.svg">
+                <img src="images/o_nas.svg">
             </div>
         </section>
         <section id="subs"  data-aos="fade-left">
 
             <div class="col-pic">
-                <img src="subskrypcje.svg">
+                <img src="images/subskrypcje.svg">
             </div>
             <div class="col-text">
                 <div class="sections-text">
                 <h1> Twoja baza subskrypcji </h1>
                 <p> Sprawdzaj, monitoruj i dodawaj nowe subskrybcje do swojej bazy danych, aby być na bieżąco w ilości i w sumie swoich wydatków przeznaczanych na okresowy dostęp usług. Obsługujemy na wszystkich powszechnych platformach usług
                 </p>
-                <a href="#">Baza subskrypcji</a>
+                <a href="baza.html">Baza subskrypcji</a>
                 </div>
             </div>
     
@@ -147,13 +148,13 @@
             </div>
     
             <div class="col-pic">
-                <img src="analytics.svg">
+                <img src="images/analytics.svg">
             </div>
 
         </section>
         <section id="calendar"  data-aos="fade-left">
             <div class="col-pic">
-                <img src="kalendarz.svg">
+                <img src="images/kalendarz.svg">
             </div>
             <div class="col-text">
                 <div class="sections-text">
@@ -172,10 +173,11 @@
                     <h1>Skontaktuj się z nami</h1>
                     <textarea name="opinion_text" rows="5" cols="50"></textarea>
                     <button class="submit">Wyślij</button>
-                    <p>Lub wykorzystaj czynną całodobową linie telefoniczną:</p>
-                    <p>+48 555 555 5555</p>
-                    <p>+48 555 555 5554</p>
+
                 </form>
+                <p>Lub wykorzystaj czynną całodobową linie telefoniczną:</p>
+                <p>+48 555 555 5555</p>
+                <p>+48 555 555 5554</p>
                 
             </div>
 
@@ -194,5 +196,6 @@
                 duration: 1000,
             });
         </script>
+        
     </body>
 </html>
