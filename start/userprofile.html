@@ -39,7 +39,7 @@
                         <li class="button-dropdown"><a href="#">Ustawienia strony</a></li>
                         <li class="button-dropdown"><a href="#">Zarządzanie subskrypcjami</a></li>
                         <li class="button-dropdown"><a href="#">Zarządzanie kalendarzem</a></li>
-                        <li class="button-dropdown"><a href="#">Usuń konto</a></li>
+                        <li class="button-dropdown"><a href="index.html" onclick="return ConfirmLogout();">Usuń konto</a></li>
                     </ul>
                     <div class="picture">
                         <img src="images/neww.svg">
@@ -56,5 +56,10 @@
         </div> 
         <script src="scripts/menu.js"></script>
         <script src="scripts/dropdown.js"></script>
+        <script>
+            function ConfirmLogout() {
+	        return confirm("Czy na pewno chcesz usunąć swoje konto?");
+}
+        </script>
 
     </body>

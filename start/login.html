@@ -8,24 +8,32 @@
       src="https://kit.fontawesome.com/64d58efce2.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <link rel="stylesheet" href="styles/style.css" />
     <title>Logowanie/Rejestracja</title>
   </head>
   <body>
     <div class="container">
       <div class="forms-container">
+        <div class="alert hide">
+          <span class="fas fa-times-circle"></span>
+          <span class="msg">Wystąpił błąd przy logowaniu</span>
+          <span class="close-btn">
+            <span class="fas fa-times"></span>
+          </span>
+        </div>
         <div class="signin-signup">
           <form action="dif_main.html" class="sign-in-form">
             <h2 class="title">Zaloguj się</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="login" minlength="6" required />
+              <input type="text" id="nazwa" placeholder="login" minlength="6" required />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="hasło" minlength="6" required />
+              <input type="password" id="hasło" placeholder="hasło" minlength="6" required />
             </div>
-            <input type="submit" value="Zaloguj się" class="button" />
+            <input type="button" value="Zaloguj się" class="button" id="submit" onclick="login();"/>
             <p class="social-text">Udostępnij naszą stronę na social media </p>
             <div class="media">
               <ul>
@@ -40,7 +48,7 @@
             <h2 class="title">Zarejestruj się</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="login" minlength="6" required/>
+              <input type="text" placeholder="login" id="newUsername" minlength="6" required/>
             </div>
             <div class="input-field">
               <i class="fas fa-envelope"></i>
@@ -48,13 +56,13 @@
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="hasło" minlength="6" required/>
+              <input type="password" placeholder="hasło" id="newPassword" minlength="6" required/>
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
               <input type="password" placeholder="potwierdź hasło" minlength="6" required/>
             </div>
-            <input type="submit" class="button" value="Zarejestruj się" onclick="location.href='rejestracja.html'"/>
+            <input type="button" class="button" value="Zarejestruj się" onclick="registerUser();" ondblclick="window.location.href = '../start/rejestracja.html';"/>
             <p class="social-text">Udostępnij naszą stronę na social media </p>
             <div class="media">
               <ul>
@@ -97,5 +105,8 @@
     </div>
 
     <script src="scripts/app.js"></script>
+    <script src="scripts/c_button.js"></script>
+    <script src="scripts/PageR.js"></script>
+    <script src="scripts/login.js"></script>
   </body>
 </html>

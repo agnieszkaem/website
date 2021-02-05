@@ -8,6 +8,7 @@
       src="https://kit.fontawesome.com/64d58efce2.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <link rel="stylesheet" href="styles/rejestracja.css" />
     <title>Rejestracja</title>
   </head>
@@ -50,8 +51,15 @@
                     <i class="fa fa-phone-square-alt" aria-hidden="true"></i>
                     <input type="tel" placeholder="numer telefonu(opcjonalny)" maxlength="9"/>
                   </div>
+                  <div class="alert hide">
+                    <span class="fas fa-check-circle"></span>
+                    <span class="msg">Konto zostało pomyślnie założone</span>
+                    <span class="close-btn">
+                      <span class="fas fa-times"></span>
+                    </span>
+                  </div>
                   <input type="button" value="Powrót" class="button" onclick="history.back()"/>
-                  <input type="submit" value="Zakończ rejestrację" class="button"/>
+                  <input type="button" value="Zakończ rejestrację" class="button" id="submit" onclick='pageRedirect();'/>
                 </form>
             </div>
         </div>
@@ -76,6 +84,8 @@
             src="scripts/plec.js">
         </script>
         <script src="scripts/app.js"></script>
+        <script src="scripts/c_button.js"></script>
+        <script src="scripts/PageR.js"></script>
                 
     </body>
 </html>
