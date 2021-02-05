@@ -12,13 +12,13 @@ function login() {
 	for(var i = 0; i < objPeople.length; i++) {
 		
 		if(username == objPeople[i].nazwa && password == objPeople[i].hasło) {
-            console.log(nazwa + ' is logged in!!!')
+            console.log(nazwa + ' jest zalogowany!!!')
             window.location.href = "../start/dif_main.html";
 			
 			break
 		} else {
 			
-			console.log('incorrect username or password')
+			console.log('błędne hasło')
 		}
     }
 
@@ -36,23 +36,26 @@ function registerUser() {
     
     for(var i = 0; i < objPeople.length; i++) {
         
-        if(registerUser == objPeople[i].nazwa) {
+        if(registerUsername == objPeople[i].nazwa) {
             
-            alert('That username is alreat in user, please choose another')
+            alert('Ta nazwa jest już zajęta, wybierz inną')
             
             break
         
-        } else if (registerPassword.length < 8) {
+        } else if (registerPassword.length < 6) {
             
-            alert('That is to short, include 8 or more characters')
+            alert('Zbyt krótkie hasło')
             
             break
+        } else {
+            objPeople.push(newUser)
         }
     }
     
-    objPeople.push(newUser)
+
 
     console.log(objPeople)
+    localStorage.setItem("newUser", newUser)
 
         
 }
