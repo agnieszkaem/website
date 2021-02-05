@@ -1,5 +1,5 @@
 var objPeople = [{
-        nazwa: "Filipo",
+        nazwa: "Dominik",
         hasło: "1234567",
     }
 ]
@@ -31,33 +31,35 @@ function registerUser() {
     
     var newUser = {
         nazwa: registerUsername,
-        hasło: registerPassword,
+        hasło: registerPassword
     }
     
     for(var i = 0; i < objPeople.length; i++) {
         
         if(registerUsername == objPeople[i].nazwa) {
             
-            alert('Ta nazwa jest już zajęta, wybierz inną')
+            alert('Ta nazwa jest już zajęta, wybierz inną');
             
-            break
+            return;
         
         } else if (registerPassword.length < 6) {
             
-            alert('Zbyt krótkie hasło')
+            alert('Zbyt krótkie hasło');
             
-            break
-        } else {
-            objPeople.push(newUser)
+            return;
         }
     }
+
+    objPeople.push(newUser)
+
+        
+    
     
 
 
     console.log(objPeople)
-    localStorage.setItem("newUser", newUser)
 
-        
+    window.location.href = '../start/rejestracja.html';
 }
 
 
