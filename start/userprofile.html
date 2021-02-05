@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles/userprofile.css" type="text/css"/>
         <link rel="stylesheet" href="styles/prem.css" type="text/css">
-        
+        <script src="scripts/logout.js"></script>
         <title>Subcontrol</title>
         <link rel="icon" href="images/logo.png">
     <body>
@@ -14,7 +14,7 @@
                 <a href="dif_main.html"><img class="logo" src="images/logo.png"></a>
                 <h1> Subcontrol </h1>
                 <div class="logout">
-                  <a href="index.html" ><img src="images/logout.svg"></a>
+                  <a href="index.html" onclick="return ConfirmLogout();" ><img src="images/logout.svg"></a>
                  </div>
             </section>
         
@@ -39,7 +39,7 @@
                         <li class="button-dropdown"><a href="#">Ustawienia strony</a></li>
                         <li class="button-dropdown"><a href="#">Zarządzanie subskrypcjami</a></li>
                         <li class="button-dropdown"><a href="#">Zarządzanie kalendarzem</a></li>
-                        <li class="button-dropdown"><a href="index.html" onclick="return ConfirmLogout();">Usuń konto</a></li>
+                        <li class="button-dropdown"><a href="deleted.html" onclick="return ConfirmLogout();">Usuń konto</a></li>
                     </ul>
                     <div class="picture">
                         <img src="images/neww.svg">

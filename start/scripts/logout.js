@@ -1,6 +1,3 @@
-$(function () {
-    $('.profile').click(function () {
-        var str = $(this).text();
-        $('#loading-content').load('dataSearch.php?' + str, hideLoader);
-    });
-});
+function ConfirmLogout() {
+    return confirm("Czy na pewno chcesz się wylogować?");
+}
