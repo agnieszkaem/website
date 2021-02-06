@@ -194,12 +194,6 @@
     pointer-events: all;
     padding: 3rem 30% 2rem 10%;
   }
-  /*
-  .right-panel {
-    pointer-events: none;
-    padding: 3rem 12% 2rem 17%;
-  }
-  */
   
   .panel .content {
     color: #fff;
@@ -239,12 +233,7 @@
    height: 35px;
   }
   
-  /*
-  .panel p {
-    font-size: 0.95rem;
-    padding: 0.7rem 0;
-  }
-  */ 
+
 
   .button.transparent {
     margin: 0;
@@ -256,10 +245,6 @@
     font-size: 0.8rem;
   }
   
- /* .right-panel,
-  .right-panel .content {
-    transform: translateX(800px);
-  } */
 
   container.sign-up-mode:before {
     transform: translate(100%, -50%);
@@ -415,9 +400,6 @@
       grid-column: 1 / 2;
     }
   
-    /*.right-panel {
-      grid-row: 3 / 4;
-    } */
   
     .left-panel {
       grid-row: 1 / 2;

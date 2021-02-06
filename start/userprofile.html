@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles/userprofile.css" type="text/css"/>
         <link rel="stylesheet" href="styles/prem.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
         <script src="scripts/logout.js"></script>
         <title>Subcontrol</title>
         <link rel="icon" href="images/logo.png">
@@ -39,7 +40,7 @@
                         <li class="button-dropdown"><a href="#">Ustawienia strony</a></li>
                         <li class="button-dropdown"><a href="#">Zarządzanie subskrypcjami</a></li>
                         <li class="button-dropdown"><a href="#">Zarządzanie kalendarzem</a></li>
-                        <li class="button-dropdown"><a href="deleted.html" onclick="return ConfirmLogout();">Usuń konto</a></li>
+                        <li class="button-dropdown"><a href="deleted.html" onclick="return ConfirmDelete();">Usuń konto</a></li>
                     </ul>
                     <div class="picture">
                         <img src="images/neww.svg">
@@ -57,7 +58,7 @@
         <script src="scripts/menu.js"></script>
         <script src="scripts/dropdown.js"></script>
         <script>
-            function ConfirmLogout() {
+            function ConfirmDelete() {
 	        return confirm("Czy na pewno chcesz usunąć swoje konto?");
 }
         </script>

@@ -28,14 +28,14 @@
                   </div>
                   <div class="input-field">
                     <i class="fas fa-envelope"></i>
-                    <input type="email" placeholder="pomocniczy adres e-mail"/>
+                    <input type="email" placeholder="pomocniczy adres e-mail" required/>
                     <span class="tooltip-text">
                       Użyjemy go,</br> by zabezpieczyć twoje konto
                     </span>
                   </div>
                   <div class="input-field">
                     <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                    <input id="data" name="date" type="text" placeholder="data urodzenia" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" min='1899-01-01' max="lol">
+                    <input id="data" name="date" type="text"  placeholder="data urodzenia" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" min='1899-01-01' max="lol" required>
                   </div>
                   <div class="input-field">
                     <i class="fa fa-venus-mars" aria-hidden="true"></i>
@@ -78,11 +78,11 @@
                   </div>
                 </div>
             </div>
+          </div>
+      </div>
 
-        <script
-            src="scripts/data_max.js"
-            src="scripts/plec.js">
-        </script>
+
+        <script src="scripts/data_max.js"></script>
         <script src="scripts/app.js"></script>
         <script src="scripts/c_button.js"></script>
         <script src="scripts/PageR.js"></script>
