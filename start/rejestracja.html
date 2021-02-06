@@ -16,7 +16,7 @@
         <div class="container">
             <div class="forms-container">
               <div class="signin-signup">
-                <form action="dif_main.html" class="sign-in-form">
+                <form action="dif_main.html" class="sign-in-form" id="myform" onsubmit='pageRedirect();'>
                   <h2 class="title">Dokończ rejestrację, aby założyć konto na stronie</h2>
                   <div class="input-field">
                     <i class="fa fa-address-book-o" aria-hidden="true"></i>
@@ -24,7 +24,7 @@
                   </div>
                   <div class="input-field">
                     <i class="fa fa-address-book-o" aria-hidden="true"></i>
-                    <input type="text" placeholder="nazwisko" required/>
+                    <input type="text" placeholder="nazwisko" id="req" required/>
                   </div>
                   <div class="input-field">
                     <i class="fas fa-envelope"></i>
@@ -59,7 +59,7 @@
                     </span>
                   </div>
                   <input type="button" value="Powrót" class="button" onclick="history.back()"/>
-                  <input type="button" value="Zakończ rejestrację" class="button" id="submit" onclick='pageRedirect();'/>
+                  <input type="submit" value="Zakończ rejestrację" class="button" id="submit"/>
                 </form>
             </div>
         </div>
@@ -84,7 +84,7 @@
             src="scripts/plec.js">
         </script>
         <script src="scripts/app.js"></script>
-        <script src="scripts/c_button.js"></script>
+        <script src="scripts/c2_button.js"></script>
         <script src="scripts/PageR.js"></script>
                 
     </body>
