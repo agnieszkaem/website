@@ -12,7 +12,7 @@ function login() {
 	for(var i = 0; i < objPeople.length; i++) {
 		
 		if(username == objPeople[i].nazwa && password == objPeople[i].hasło) {
-            console.log(nazwa + ' jest zalogowany!!!')
+            console.log(nazwa + ' jest zalogowany!')
             window.location.href = "../start/dif_main.html";
 			
 			break
